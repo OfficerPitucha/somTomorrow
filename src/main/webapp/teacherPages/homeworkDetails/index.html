@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="initial-scale=1, width=device-width"/>
+
+    <link rel="stylesheet" href="./global.css"/>
+    <link rel="stylesheet" href="./index.css"/>
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+    />
+</head>
+<body>
+
+<div class="root">
+    <section class="page">
+        <div class="top-bar">
+            <img
+                    class="top-bar-child"
+                    loading="lazy"
+                    alt=""
+                    src="./public/rectangle-4137@2x.png"
+            />
+
+            <a class="title">Edit Homework Details</a>
+            <div class="navigation">
+                <a class="tab" id="tabText " href="../teacherHomePage/homepageTeacher.html"
+                   style="color: white; text-decoration: none;"> Home</a>
+                <a class="tab1" href="../teacher_profile/index.html"
+                   style="color: white; text-decoration: none;">Profile</a>
+                <div class="textfield">
+                    <input class="text" placeholder="Search in site" type="text"/>
+
+                    <img class="ic-search-icon" alt="" src="./public/icsearch.svg"/>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-inner">
+                <div class="frame-parent">
+                    <div class="content-container-wrapper">
+                        <div class="content-container">
+                            <h1 class="title1">Cutting Up Homework</h1>
+                            <div class="description-parent">
+                                <div class="description">Parts of the homework</div>
+                                <div class="items-container">
+                                    <!-- List of Parts -->
+                                    <div class="list3">
+                                        <!-- Existing Homework Part Items -->
+                                        <div class="item" id="itemContainer">
+                                            <a href="../homeworkParts/index.html"
+                                               style="color: black; text-decoration: none;"
+                                               class="item-icon-parent">
+                                                <div class="frame-group">
+                                                    <div class="frame">
+                                                        <div class="icon">📝</div>
+                                                    </div>
+                                                    <div class="title-wrapper">
+                                                        <div class="title2">Part 1</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <img class="item-child" alt=""
+                                                 src="./public/vector-200.svg"/>
+                                        </div>
+                                        <div class="row" id="rowContainer">
+                                            <a href="../homeworkParts/index.html"
+                                               style="color: black; text-decoration: none;"
+                                               class="item-icon-parent">
+                                                <div class="frame-container">
+                                                    <div class="frame1">
+                                                        <div class="icon1">📝</div>
+                                                    </div>
+                                                    <div class="title-container">
+                                                        <div class="title3">Part 2</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <img class="row-child" alt=""
+                                                 src="./public/vector-200.svg"/>
+                                        </div>
+                                        <div class="row1" id="rowContainer1">
+                                            <a href="../homeworkParts/index.html"
+                                               style="color: black; text-decoration: none;"
+                                               class="item-icon-parent">
+                                                <div class="frame-div">
+                                                    <div class="frame2">
+                                                        <div class="icon2">📝</div>
+                                                    </div>
+                                                    <div class="title-frame">
+                                                        <div class="title4">Part 3</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <img class="row-item" alt=""
+                                                 src="./public/vector-200.svg"/>
+                                        </div>
+                                    </div>
+
+                                    <!-- Plus Button for Homework Parts (Moved outside the items list) -->
+                                    <div class="list-item-icon" id="listItemIcon">
+                                        <div class="icon3">➕</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="image">
+
+                        <div class="image-title-container2">
+                            <div class="title7">Description</div>
+                            <div class="textfield2">
+                                <div class="text1">
+                                    <input
+                                            class="text"
+                                            placeholder="Enter Description"
+                                            type="text"
+                                            id="description"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="image-title-container">
+                            <div class="title5">Deadline</div>
+                            <div class="textfield1">
+                                <input
+                                        class="text1"
+                                        placeholder="Enter due date"
+                                        type="date"
+                                        id="deadline"
+                                />
+                            </div>
+                        </div>
+
+                        <div class="image-title-container1">
+                            <div class="title6">Time Indication</div>
+                            <div class="textfield2">
+                                <div class="text2">
+                                    <input
+                                            class="text"
+                                            placeholder="Enter how much time this homework will take"
+                                            type="text"
+                                            id="timeIndication"
+                                    />
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row3">
+                            <div class="input">
+                                <div class="title9">Goal</div>
+                                <div class="textfield4">
+                                    <input
+                                            class="text5"
+                                            placeholder="Optional"
+                                            type="text"
+                                            id="goal"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--                        <div class="list-container">-->
+                        <div class="list">
+
+                            <div class="row2">
+                                <div class="selection">
+                                    <div class="title8">Allow cutting up homework</div>
+                                    <div class="chip-group">
+                                        <button class="chip" id="all-students">
+                                            <div class="text3">All students</div>
+                                        </button>
+                                        <button class="chip1" id="customize">
+                                            <div class="text4">Customize</div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="button">
+
+                                <button class="seconday" id="deleteHomeworkButton">
+                                    <div class="title10">Delete Homework</div>
+                                </button>
+
+                                <button class="primary" id="updateHomeworkButton">
+                                    <div class="title11">Save Changes</div>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                        <!--                        </div>-->
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<script src="../../js/teacher_js/homeworkRequest.js"></script>
+<script src="../../js/teacher_js/studentRequest.js"></script>
+<script src="../../js/teacher_js/homeworkDetails.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        if (getQueryParam("homeworkId")) {
+            getOneHomeworkDetail(getQueryParam("homeworkId"));
+        }
+    });
+    document.getElementById("deleteHomeworkButton").addEventListener("click", function (e) {
+        e.preventDefault();
+        deleteHomework();
+    });
+
+    document.getElementById("updateHomeworkButton").addEventListener("click", function (e) {
+        e.preventDefault();
+        if (homeworkId) {
+            updateHomeworkDetails(homeworkDetails);
+        } else {
+            createHomework(homeworkDetails);
+            window.location.href = `../lessonsPage/index.html?teacherId=${getQueryParam("teacherId")}&classId=${getQueryParam("classId")}&lessonId${getQueryParam("lessonId")}`
+        }
+    });
+
+</script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+openapi: 3.0.3
+info:
+  title: Sometomorrow API
+  description: Sometomorrow API
+  version: 1.0.0
+servers:
+  - description: Local Deployment
+    url: 'https://localhost:8080/somtomorrow/api'
+tags:
+  - name: Login
+    description: Routes for login as teacher or student.
+  - name: Teacher
+    description: Routes for managing data about teachers.
+  - name: Student
+    description: Routes for managing data about students.
+paths:
+  /login:
+    post:
+      description: Send username and password to login.
+      tags:
+        - Login
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Login'
+            examples:
+              full:
+                description: Complete POST example
+                value:
+                  username: "T637"
+                  password: "jhdehde"
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                example:
+                  role : "teacher"
+        '400':
+          description: Bad Request
+        '405':
+          description: Method Not Allowed
+
+components:
+  schemas:
+    Login:
+      description: Schema describing the overall shape of login resources.
+      type: object
+      properties:
+        username:
+          type: string
+          minLength: 1
+        password:
+          type: string
+          minLength: 1
+      required:
+        - username
+        - password

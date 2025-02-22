@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="initial-scale=1, width=device-width"/>
+    <link rel="stylesheet" href="global.css"/>
+    <link rel="stylesheet" href="homepageTeacher.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"/>
+</head>
+<body>
+<script src="../../js/teacher_js/classRequest.js"></script>
+
+<!-- start navigation bar-->
+    <header class="frame">
+        <img class="frame-child" loading="lazy" alt="" src="public/rectangle-4137@2x.png"/>
+        <h1 class="title">Home Page</h1>
+        <nav class="navigation">
+            <a class="tab" id="tabText0">Profile</a>
+            <a class="tab1" id="tabText1">Logout</a>
+            <div class="textfield">
+                <label>
+                    <input class="text" placeholder="Search in site" type="text"/>
+                </label>
+                <img class="ic-search-icon" loading="lazy" alt="" src="public/icsearch.svg"/>
+            </div>
+        </nav>
+    </header>
+<main class="frame-wrapper">
+    <section class="page-parent">
+        <!-- Begin calendar -->
+        <div class="containerCal">
+            <div class="calendar-nav">
+                <button id="prev-week" class="week-nav-button">&lt;</button>
+                <div id="week-display" class="week-display"></div>
+                <button id="next-week" class="week-nav-button">&gt;</button>
+            </div>
+             <div class="calendar-container">
+
+                <div class="calendar">
+                    <div class="current-time-display" id="current-time-display"></div>
+                    <div class="current-time-indicator" id="current-time-indicator"></div>
+                    <!-- Day headers -->
+                    <div class="time-slot" style="border:none;"></div>
+                    <div class="day-header">Monday</div>
+                    <div class="day-header">Tuesday</div>
+                    <div class="day-header">Wednesday</div>
+                    <div class="day-header">Thursday</div>
+                    <div class="day-header">Friday</div>
+
+                    <!-- Time slots and days -->
+                    <div class="time-slot">00:00</div>
+                    <div class="timeslot" data-timeslot="0am">_</div>
+                    <div class="timeslot" data-timeslot="0am">_</div>
+                    <div class="timeslot" data-timeslot="0am">_</div>
+                    <div class="timeslot" data-timeslot="0am">_</div>
+                    <div class="timeslot" data-timeslot="0am">_</div>
+
+                    <div class="time-slot">01:00</div>
+                    <div class="timeslot" data-timeslot="1am">_</div>
+                    <div class="timeslot" data-timeslot="1am">_</div>
+                    <div class="timeslot" data-timeslot="1am">_</div>
+                    <div class="timeslot" data-timeslot="1am">_</div>
+                    <div class="timeslot" data-timeslot="1am">_</div>
+
+                    <div class="time-slot">02:00</div>
+                    <div class="timeslot" data-timeslot="2am">_</div>
+                    <div class="timeslot" data-timeslot="2am">_</div>
+                    <div class="timeslot" data-timeslot="2am">_</div>
+                    <div class="timeslot" data-timeslot="2am">_</div>
+                    <div class="timeslot" data-timeslot="2am">_</div>
+
+                    <div class="time-slot">03:00</div>
+                    <div class="timeslot" data-timeslot="3am">_</div>
+                    <div class="timeslot" data-timeslot="3am">_</div>
+                    <div class="timeslot" data-timeslot="3am">_</div>
+                    <div class="timeslot" data-timeslot="3am">_</div>
+                    <div class="timeslot" data-timeslot="3am">_</div>
+
+                    <div class="time-slot">04:00</div>
+                    <div class="timeslot" data-timeslot="4am">_</div>
+                    <div class="timeslot" data-timeslot="4am">_</div>
+                    <div class="timeslot" data-timeslot="4am">_</div>
+                    <div class="timeslot" data-timeslot="4am">_</div>
+                    <div class="timeslot" data-timeslot="4am">_</div>
+
+                    <div class="time-slot">05:00</div>
+                    <div class="timeslot" data-timeslot="5am">_</div>
+                    <div class="timeslot" data-timeslot="5am">_</div>
+                    <div class="timeslot" data-timeslot="5am">_</div>
+                    <div class="timeslot" data-timeslot="5am">_</div>
+                    <div class="timeslot" data-timeslot="5am">_</div>
+
+                    <div class="time-slot">06:00</div>
+                    <div class="timeslot" data-timeslot="6am">_</div>
+                    <div class="timeslot" data-timeslot="6am">_</div>
+                    <div class="timeslot" data-timeslot="6am">_</div>
+                    <div class="timeslot" data-timeslot="6am">_</div>
+                    <div class="timeslot" data-timeslot="6am">_</div>
+
+                    <div class="time-slot">07:00</div>
+                    <div class="timeslot" data-timeslot="7am">_</div>
+                    <div class="timeslot" data-timeslot="7am">_</div>
+                    <div class="timeslot" data-timeslot="7am">_</div>
+                    <div class="timeslot" data-timeslot="7am">_</div>
+                    <div class="timeslot" data-timeslot="7am">_</div>
+
+                    <div class="time-slot">08:00</div>
+                    <div class="timeslot" data-timeslot="8am">_</div>
+                    <div class="timeslot" data-timeslot="8am">_</div>
+                    <div class="timeslot" data-timeslot="8am">_</div>
+                    <div class="timeslot" data-timeslot="8am">_</div>
+                    <div class="timeslot" data-timeslot="8am">_</div>
+
+                    <div class="time-slot">09:00</div>
+                    <div class="timeslot" data-timeslot="9am">_</div>
+                    <div class="timeslot" data-timeslot="9am">_</div>
+                    <div class="timeslot" data-timeslot="9am">_</div>
+                    <div class="timeslot" data-timeslot="9am">_</div>
+                    <div class="timeslot" data-timeslot="9am">_</div>
+
+                    <div class="time-slot">10:00</div>
+                    <div class="timeslot" data-timeslot="10am">_</div>
+                    <div class="timeslot" data-timeslot="10am">_</div>
+                    <div class="timeslot" data-timeslot="10am">_</div>
+                    <div class="timeslot" data-timeslot="10am">_</div>
+                    <div class="timeslot" data-timeslot="10am">_</div>
+
+                    <div class="time-slot">11:00</div>
+                    <div class="timeslot" data-timeslot="11am">_</div>
+                    <div class="timeslot" data-timeslot="11am">_</div>
+                    <div class="timeslot" data-timeslot="11am">_</div>
+                    <div class="timeslot" data-timeslot="11am">_</div>
+                    <div class="timeslot" data-timeslot="11am">_</div>
+
+                    <div class="time-slot">12:00</div>
+                    <div class="timeslot non-clickable" data-timeslot="12pm">_</div>
+                    <div class="timeslot non-clickable" data-timeslot="12pm">_</div>
+                    <div class="timeslot non-clickable" data-timeslot="12pm">_</div>
+                    <div class="timeslot non-clickable" data-timeslot="12pm">_</div>
+                    <div class="timeslot non-clickable" data-timeslot="12pm">_</div>
+
+                    <div class="time-slot">13:00</div>
+                    <div class="timeslot" data-timeslot="1pm">_</div>
+                    <div class="timeslot" data-timeslot="1pm">_</div>
+                    <div class="timeslot" data-timeslot="1pm">_</div>
+                    <div class="timeslot" data-timeslot="1pm">_</div>
+                    <div class="timeslot" data-timeslot="1pm">_</div>
+
+                    <div class="time-slot">14:00</div>
+                    <div class="timeslot" data-timeslot="2pm">_</div>
+                    <div class="timeslot" data-timeslot="2pm">_</div>
+                    <div class="timeslot" data-timeslot="2pm">_</div>
+                    <div class="timeslot" data-timeslot="2pm">_</div>
+                    <div class="timeslot" data-timeslot="2pm">_</div>
+
+                    <div class="time-slot">15:00</div>
+                    <div class="timeslot" data-timeslot="3pm">_</div>
+                    <div class="timeslot" data-timeslot="3pm">_</div>
+                    <div class="timeslot" data-timeslot="3pm">_</div>
+                    <div class="timeslot" data-timeslot="3pm">_</div>
+                    <div class="timeslot" data-timeslot="3pm">_</div>
+
+                    <div class="time-slot">16:00</div>
+                    <div class="timeslot" data-timeslot="4pm">_</div>
+                    <div class="timeslot" data-timeslot="4pm">_</div>
+                    <div class="timeslot" data-timeslot="4pm">_</div>
+                    <div class="timeslot" data-timeslot="4pm">_</div>
+                    <div class="timeslot" data-timeslot="4pm">_</div>
+
+                    <div class="time-slot">17:00</div>
+                    <div class="timeslot" data-timeslot="5pm">_</div>
+                    <div class="timeslot" data-timeslot="5pm">_</div>
+                    <div class="timeslot" data-timeslot="5pm">_</div>
+                    <div class="timeslot" data-timeslot="5pm">_</div>
+                    <div class="timeslot" data-timeslot="5pm">_</div>
+
+                    <div class="time-slot">18:00</div>
+                    <div class="timeslot" data-timeslot="6pm">_</div>
+                    <div class="timeslot" data-timeslot="6pm">_</div>
+                    <div class="timeslot" data-timeslot="6pm">_</div>
+                    <div class="timeslot" data-timeslot="6pm">_</div>
+                    <div class="timeslot" data-timeslot="6pm">_</div>
+
+                    <div class="time-slot">19:00</div>
+                    <div class="timeslot" data-timeslot="7pm">_</div>
+                    <div class="timeslot" data-timeslot="7pm">_</div>
+                    <div class="timeslot" data-timeslot="7pm">_</div>
+                    <div class="timeslot" data-timeslot="7pm">_</div>
+                    <div class="timeslot" data-timeslot="7pm">_</div>
+
+                    <div class="time-slot">20:00</div>
+                    <div class="timeslot" data-timeslot="8pm">_</div>
+                    <div class="timeslot" data-timeslot="8pm">_</div>
+                    <div class="timeslot" data-timeslot="8pm">_</div>
+                    <div class="timeslot" data-timeslot="8pm">_</div>
+                    <div class="timeslot" data-timeslot="8pm">_</div>
+
+                    <div class="time-slot">21:00</div>
+                    <div class="timeslot" data-timeslot="9pm">_</div>
+                    <div class="timeslot" data-timeslot="9pm">_</div>
+                    <div class="timeslot" data-timeslot="9pm">_</div>
+                    <div class="timeslot" data-timeslot="9pm">_</div>
+                    <div class="timeslot" data-timeslot="9pm">_</div>
+
+                    <div class="time-slot">22:00</div>
+                    <div class="timeslot" data-timeslot="10pm">_</div>
+                    <div class="timeslot" data-timeslot="10pm">_</div>
+                    <div class="timeslot" data-timeslot="10pm">_</div>
+                    <div class="timeslot" data-timeslot="10pm">_</div>
+                    <div class="timeslot" data-timeslot="10pm">_</div>
+
+                    <div class="time-slot">23:00</div>
+                    <div class="timeslot" data-timeslot="11pm">_</div>
+                    <div class="timeslot" data-timeslot="11pm">_</div>
+                    <div class="timeslot" data-timeslot="11pm">_</div>
+                    <div class="timeslot" data-timeslot="11pm">_</div>
+                    <div class="timeslot" data-timeslot="11pm">_</div>
+
+                    <div class="time-slot">0:00</div>
+
+
+                </div>
+                 </div>
+
+            </div>
+                <!-- End calendar -->
+        </section>
+    </main>
+
+<!-- start classes-->
+    <footer class="products-wrapper">
+        <div class="products">
+            <div class="products-inner">
+                <div class="frame-container">
+                    <div class="frame-parent2">
+                        <div class="title-wrapper">
+
+                        </div>
+
+<!--                        <a href="../classPage/index.html" class="frame2" id="frameContainer1">-->
+
+<!--                        </a>-->
+                    </div>
+                    <div class="frame-wrapper1">
+
+
+                            <button id="left-chevron" class="chevron-left-parent">
+                                <img class="chevron-left-icon" alt="" src="public/chevronleft-1.svg" />
+                            </button>
+
+
+                        <div id="card-parent" class="card-parent">
+<!--                            classes will be stored here-->
+                        </div>
+
+
+                            <button id="right-chevron" class="chevron-parent">
+                                <img class="chevron-right-icon" loading="lazy" alt="" src="public/chevronright.svg" />
+                            </button>
+
+                        <button id="buttonAddIcon" class="buttonAddIcon">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+<!-- end classes-->
+
+
+<!-- Popup form -->
+<div class="popup-overlay" id="popup-overlay"></div>
+<div class="popup-form" id="popup-form">
+    <h2>Add New Class</h2>
+    <label for="class-name">Class Name</label>
+    <input type="text" id="class-name" name="class-name"/>
+    <button id="add-class-btn">Add Class</button>
+</div>
+<div class="hover-popup" id="hover-popup">
+    <p>This is a brief description of the timeslot.</p>
+</div>
+<div class="popup-overlay" id="timepopup-overlay"></div>
+<div class="popup-form" id="timepopup-form">
+    <h2>Detailed View</h2>
+    <p>This is the detailed view of the timeslot.</p>
+</div>
+
+<script src="homepageteacher.js" defer></script>
+
+<script>
+    fetchAllClasses();
+</script>
+
+
+</body>
+</html>

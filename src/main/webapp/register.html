@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="register.css" />
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+    />
+    <title>Register</title>
+</head>
+<body>
+<div class="frame-parent">
+    <div class="group-wrapper">
+        <div class="frame-wrapper">
+            <div class="frame-container">
+                <div class="frame-group">
+                    <img
+                            class="frame-icon"
+                            alt=""
+                            src="public/frame@2x.png"
+                            data-scroll-to="frameImage"
+                    />
+
+                    <div class="background">
+                        <div class="login">Register</div>
+                    </div>
+                    <img
+                            class="somtomorrow-1-icon"
+                            alt=""
+                            src="public/somtomorrow-1@2x.png"
+                    />
+
+                    <div class="background1">
+                        <form id="registerForm" method="post">
+                            <label for="username" class="form-label">Username must start with 'S' or 'T'</label>
+                            <input class="form-input" type="text" id="username" placeholder="Username" required />
+
+                            <label for="password" class="form-label"></label>
+                            <input class="form-input" type="password" id="password" placeholder="Password" required />
+
+                            <label for="confirmPassword" class="form-label"></label>
+                            <input class="form-input" type="password" id="confirmPassword" placeholder="Confirm Password" required />
+
+                            <p id="usernameWarning" class="warning">Username must start with 'S' or 'T'.</p>
+
+                            <div class="section">
+                                <div class="secondary-button" id="secondaryButtonContainer">
+                                    <button type="submit" class="login-button" style="border: none">REGISTER</button>
+                                </div>
+                                <div class="register-link">
+                                    <a href="login.html">Already have an account? Login</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/registerRequest.js" defer></script>
+<script defer>
+    document.addEventListener('DOMContentLoaded', function () {
+        handleRegister();
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,1087 @@
+/* Popup form styles */
+.popup-form {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    z-index: 10;
+    border-radius: 10px;
+}
+
+.popup-form input, .popup-form button {
+    display: block;
+    margin: 10px 0;
+}
+
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 5;
+}
+
+
+/*
+
+ */
+
+/*!**/
+/*Pop up delete class*/
+/* *!*/
+/*.modal {*/
+/*    display: none;*/
+/*    position: fixed;*/
+/*    z-index: 1;*/
+/*    left: 0;*/
+/*    top: 0;*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    overflow: auto;*/
+/*    background-color: rgb(0,0,0);*/
+/*    background-color: rgba(0,0,0,0.4);*/
+/*}*/
+/*.modal-content {*/
+/*    background-color: #fefefe;*/
+/*    margin: 15% auto;*/
+/*    padding: 20px;*/
+/*    border: 1px solid #888;*/
+/*    width: 80%;*/
+/*}*/
+/*.close {*/
+/*    color: #aaa;*/
+/*    float: right;*/
+/*    font-size: 28px;*/
+/*    font-weight: bold;*/
+/*}*/
+/*.close:hover,*/
+/*.close:focus {*/
+/*    color: black;*/
+/*    text-decoration: none;*/
+/*    cursor: pointer;*/
+/*}*/
+/*!**/
+/*end pop up*/
+/* *!*/
+
+
+
+
+.frame-child {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    border-radius: var(--br-81xl);
+    object-fit: cover;
+}
+
+.tab,
+.tab1,
+.title {
+    position: relative;
+    display: inline-block;
+}
+
+.title {
+    margin: 0;
+    flex: 1;
+    font-size: inherit;
+    line-height: 36px;
+    font-weight: 500;
+    font-family: inherit;
+    white-space: nowrap;
+    max-width: 100%;
+}
+
+.tab,
+.tab1 {
+    text-decoration: none;
+    line-height: 24px;
+    color: inherit;
+    min-width: 46px;
+}
+
+.tab1 {
+    min-width: 50px;
+    cursor: pointer;
+}
+
+.navigation,
+.textfield {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navigation {
+    margin: 0;
+    width: 376px;
+    background-color: #ffbc28;
+    justify-content: space-between;
+    max-width: 100%;
+    gap: var(--gap-xl);
+    text-align: left;
+    font-size: var(--font-size-base);
+    color: var(--color-black);
+    font-family: var(--font-roboto);
+}
+
+.ic-search-icon,
+.text {
+    height: 20px;
+    position: relative;
+}
+
+.text {
+    width: calc(100% - 34px);
+    border: 0;
+    outline: 0;
+    font-family: var(--font-roboto);
+    font-size: var(--text-sm-medium-size);
+    background-color: transparent;
+    flex: 1;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: left;
+    display: inline-block;
+    min-width: 96px;
+    white-space: nowrap;
+    padding: 0;
+}
+
+.ic-search-icon {
+    width: 20px;
+    min-height: 20px;
+}
+
+.textfield {
+    width: 200px;
+    border-radius: var(--br-7xs);
+    background-color: var(--white);
+    border: 1px solid var(--color-gray-100);
+    box-sizing: border-box;
+    justify-content: flex-end;
+    padding: var(--padding-7xs) var(--padding-6xs);
+    gap: var(--gap-9xs);
+}
+
+
+/* icon not used */
+
+.frame,
+.icon {
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.frame {
+    /*margin-top: -80.1px;*/
+    margin: 0; /* Remove top and right margins */
+    width: 100%; /* Make the width stretch across the screen */
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.12);
+    background-color: var(--color-goldenrod-100);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-xl) 75px;
+    box-sizing: border-box; /* Include padding and border in width */
+    overflow: hidden;
+    gap: var(--gap-xl);
+    top: 0; /* Align to the top */
+    z-index: 99;
+    position: fixed;
+    text-align: left;
+    font-size: 28px;
+    color: white;
+    font-family: var(--font-roboto);
+}
+
+.chevron-right-icon,
+.chevron-left-icon{
+    width: 71px;
+    background-color: white;
+    color: white;
+    height: 71px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    z-index: 3;
+}
+
+.chevron-left-parent,
+.chevron-parent{
+    margin: 5px;
+    background-color: white;
+}
+
+.subtitle,
+.title1 {
+    align-self: stretch;
+    position: relative;
+    line-height: 24px;
+}
+
+.subtitle {
+    font-size: var(--font-size-xl);
+    line-height: 28px;
+    font-weight: 500;
+}
+
+.subtitle1,
+.title3 {
+    align-self: stretch;
+    position: relative;
+    line-height: 24px;
+}
+
+.subtitle1 {
+    font-size: var(--font-size-xl);
+    line-height: 28px;
+    font-weight: 500;
+}
+
+.card1,
+.text-content {
+    flex: 1;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 100%;
+}
+
+.text-content {
+    background-color: var(--color-goldenrod-100);
+    flex-direction: column;
+    padding: var(--padding-xs);
+    gap: var(--gap-9xs);
+    cursor: pointer;
+}
+
+.card1 {
+
+    overflow: hidden;
+    flex-direction: row;
+    min-width: 277px;
+}
+
+.subtitle2,
+.title4 {
+    align-self: stretch;
+    position: relative;
+    line-height: 24px;
+}
+
+.subtitle2 {
+    font-size: var(--font-size-xl);
+    line-height: 28px;
+    font-weight: 500;
+}
+
+.card-parent,
+.card2,
+.text-content1 {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 100%;
+}
+
+.text-content1 {
+    flex-direction: column;
+    padding: var(--padding-xs);
+    box-sizing: border-box;
+    gap: var(--gap-9xs);
+    cursor: pointer;
+}
+
+.card-parent,
+.card2 {
+    flex-direction: row;
+}
+
+.card2 {
+    border-radius: var(--br-7xs);
+    background-color: var(--color-goldenrod-100);
+    border: 1px solid var(--color-gray-100);
+    box-sizing: border-box;
+    overflow: hidden;
+    min-width: 277px;
+}
+
+.card-parent {
+    gap: 40px;
+    overflow: scroll;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    scrollbar-width: none; /* For Firefox */
+    scrollbar-color: #888 #fff; /* For Firefox */
+    -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+}
+
+/*Maybe not needed*/
+
+.card-parent::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}
+
+/*.card-parent::-webkit-scrollbar {*/
+/*    height: 8px; !* Height of horizontal scrollbar *!*/
+/*}*/
+
+/*.card-parent::-webkit-scrollbar-track {*/
+/*    background: #f1f1f1; !* Background of scrollbar track *!*/
+/*}*/
+
+/*.card-parent::-webkit-scrollbar-thumb {*/
+/*    background: #888; !* Scrollbar thumb color *!*/
+/*}*/
+
+/*.card-parent::-webkit-scrollbar-thumb:hover {*/
+/*    background: #555; !* Scrollbar thumb color on hover *!*/
+/*}*/
+
+.frame-wrapper1,
+.icon15 {
+    align-self: stretch;
+    display: flex;
+}
+
+.frame-wrapper1 {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 31px 0 0;
+    box-sizing: border-box;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.icon15 {
+    width: 24px;
+    position: relative;
+    line-height: 24px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+
+ .buttonAddIcon,
+ .buttonDeleteClass {
+     align-items: center;
+     background-clip: padding-box;
+     background-color:rgba(255, 188, 40, 1) ;
+     border:rgba(255, 188, 40, 1)  ;
+     border-radius: .25rem;
+     box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+     box-sizing: border-box;
+     color: white;
+     cursor: pointer;
+     display: inline-flex;
+     font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+     font-size: 16px;
+     font-weight: 600;
+     justify-content: center;
+     line-height: 1.25;
+     margin: 0;
+     min-height: 3rem;
+     padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+     position: relative;
+     text-decoration: none;
+     transition: all 250ms;
+     user-select: none;
+     -webkit-user-select: none;
+     touch-action: manipulation;
+     vertical-align: baseline;
+     width: auto;
+ }
+
+.buttonAddIcon:hover,
+.buttonAddIcon:focus {
+    background-color: rgba(2, 94, 184, 0.95);;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    color: white;
+    border-color: white;
+}
+
+.buttonDeleteClass:hover,
+.buttonDeleteClass:focus {
+    background-color: red;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    color: white;
+    border-color: white;
+}
+
+.buttonAddIcon:hover,
+.buttonDeleteClass:hover{
+    transform: translateY(-1px);
+}
+
+.buttonAddIcon:active {
+    background-color: #c85000;
+    box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+    transform: translateY(0);
+}
+
+.frame2 {
+    width: 43px;
+    height: 39px;
+    border-radius: var(--br-xs);
+    background-color: var(--color-gray-200);
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 8.1px 5px 6.9px;
+    box-sizing: border-box;
+    cursor: pointer;
+    z-index: 10;
+}
+.frame-parent2 {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically, if needed */
+    width: 100%;
+    text-align: center; /* Ensure text is centered */
+}
+
+.title5 {
+    margin: 0;
+    width: 400px;
+    position: relative;
+    font-size: inherit;
+    line-height: 48px;
+    font-weight: 700;
+    font-family: inherit;
+    display: inline-block;
+    flex-shrink: 0;
+    max-width: 100%;
+    justify-content: center;
+    left: -160px;
+}
+
+.frame-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.frame-parent2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+.title-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    flex-direction: row;
+    font-size: 40px;
+}
+
+.frame-container,
+.frame-parent2 {
+    flex-direction: row;
+    align-items: center;
+}
+
+.frame-parent2 {
+    width: 885px;
+    text-align: center;
+    font-size: var(--font-size-mini);
+}
+
+.frame-container {
+    width: 1220px;
+    gap: 9px;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.calendar-container {
+    position: relative;
+    overflow: hidden;
+    height: auto; /* Set a fixed height to ensure the calendar doesn't jump */
+}
+.calendar {
+    display: grid;
+    grid-template-columns: auto repeat(5, 1fr); /* One auto column for time slots, five equal columns for days */
+    gap: 10px; /* Adjust the gap as needed */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px solid rgba(255, 188, 40, 1);
+    border-radius: 5px;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+    top: 0;
+    left: 0;
+    transform: translateX(0) translateY(0);
+}
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%) translateY(0);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0) translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOutToLeft {
+    from {
+        transform: translateX(0) translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(-100%) translateY(0);
+        opacity: 0;
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%) translateY(0);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0) translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOutToRight {
+    from {
+        transform: translateX(0) translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(100%) translateY(0);
+        opacity: 0;
+    }
+}
+.calendar.slide-in-right {
+    animation: slideInFromRight 0.5s forwards;
+}
+
+.calendar.slide-out-left {
+    animation: slideOutToLeft 0.5s forwards;
+}
+
+.calendar.slide-in-left {
+    animation: slideInFromLeft 0.5s forwards;
+}
+
+.calendar.slide-out-right {
+    animation: slideOutToRight 0.5s forwards;
+}
+
+.products-inner {
+    align-self: stretch;
+    max-width: 100%;
+}
+
+.products-inner {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+.products {
+    height: 282px;
+    flex: 1;
+    background-color: var(--color-white);
+    overflow: hidden;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    /*padding: 76px 0 var(--padding-11xl);*/
+    position: relative;
+    gap: 30.2px;
+    flex-shrink: 0;
+    z-index: 2;
+}
+
+.page-parent,
+.products,
+.products-wrapper {
+    display: compact;
+    box-sizing: content-box;
+    max-width: 100%;
+    height: 200px;
+}
+
+.products-wrapper {
+    width: 100%;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 0;
+    flex-shrink: 0;
+    margin-top: -200.1px;
+    margin-bottom: -100px;
+    text-align: center;
+    font-size: var(--font-size-base);
+    color: var(--color-black);
+    font-family: var(--font-roboto);
+}
+
+.page-parent {
+    height: 640px;
+    flex: 1;
+    background-color: var(--white);
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 0.1px 0 16.7px;
+    z-index: 1;
+}
+
+.frame-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.frame-wrapper {
+    flex: 1;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 1275px) {
+    .navigation {
+        display: none;
+    }
+
+    .frame {
+        width: 0px;
+    }
+
+    .products-wrapper {
+        padding-left: var(--padding-8xl);
+        padding-right: var(--padding-8xl);
+        box-sizing: border-box;
+    }
+
+    .frame-wrapper {
+        padding-top: 51px;
+        padding-bottom: var(--padding-2xl);
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .card-parent {
+        flex-wrap: wrap;
+        min-width: 100%;
+    }
+
+    .page {
+        padding-bottom: 38px;
+        box-sizing: border-box;
+    }
+
+    .products {
+        height: auto;
+    }
+
+    .card-parent {
+        gap: var(--gap-xl);
+    }
+
+    .title5 {
+        margin: 0 auto; /* Center horizontally */
+        font-size: inherit;
+        line-height: 48px;
+        font-weight: 700;
+        font-family: inherit;
+        display: inline-block;
+        max-width: 100%;
+    }
+
+    .products {
+        gap: 15px;
+    }
+
+    .page-parent {
+        height: auto;
+    }
+
+    .frame-wrapper {
+        padding-top: 33px;
+        padding-bottom: var(--padding-xl);
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .subtitle {
+        font-size: var(--font-size-base);
+        line-height: 22px;
+    }
+
+    .subtitle1,
+    .subtitle2 {
+        font-size: var(--font-size-base);
+        line-height: 22px;
+    }
+
+    .title5 {
+        font-size: 24px;
+        line-height: 29px;
+    }
+}
+
+html,body {
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.12);
+    background-color: var(--color-goldenrod-100);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-xl) 75px;
+    box-sizing: border-box;
+    overflow: hidden;
+    gap: var(--gap-xl);
+    top: 0;
+    z-index: 99;
+    position: fixed; /* Fixed position for the header */
+    text-align: left;
+    font-size: 28px;
+    color: var(--color-black);
+    font-family: var(--font-roboto);
+    height: 70px; /* Adjust height as needed */
+}
+
+main {
+    flex: 1; /* Allows the main content to expand */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px; /* This should match the height of the header */
+    padding: 20px; /* Adjust padding as needed */
+    background-color: white; /* Ensure main content has a white background */
+}
+
+footer {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border-top: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Calendar */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+}
+
+#homework-info {
+    padding: 20px;
+    border: 2px solid rgba(255, 188, 40, 1);
+    margin-bottom: 20px;
+}
+
+#homework-info h2 {
+    color: rgba(2, 94, 184, 0.95);
+}
+
+
+
+.calendar {
+    max-height: 500px; /* Adjust the height as needed */
+    overflow-y: auto;
+    border: 2px solid rgba(255, 188, 40, 1);
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: auto repeat(5, 1fr); /* One auto column for time slots, five equal columns for days */
+    gap: 0px; /* Remove gaps to align borders */
+    box-sizing: border-box;
+}
+
+.grid-item,
+.day-column {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.day-header {
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(2, 94, 184, 0.95);
+    color: white;
+    border: 1px solid rgba(2, 94, 184, 0.95); /* Border around header */
+    border-radius: 5px 5px 0 0; /* Rounded corners for the top */
+}
+
+.day-column {
+    border: 1px solid rgba(2, 94, 184, 0.95); /* Border around entire column */
+    border-radius: 0 0 5px 5px; /* Rounded corners for the bottom */
+}
+
+.timeslot {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid rgba(2, 94, 184, 0.95);
+    border-right: 1px solid rgba(2, 94, 184, 0.95);
+    border-left: 1px solid rgba(2, 94, 184, 0.95);
+    position: relative;
+
+}
+
+.timeslot:last-child {
+    border-bottom: none; /* Remove bottom border for the last timeslot */
+}
+
+.timeslot:nth-child(odd) {
+    border-left: 1px solid rgba(2, 94, 184, 0.95); /* Vertical lines between columns */
+}
+
+.timeslot:hover:not(.non-clickable) {
+    background-color: #e3f2fd; /* Slight color change */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light box shadow */
+}
+
+.non-clickable {
+    background-color: lightgrey;
+    cursor: default;
+}
+.hover-popup {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 1000;
+    pointer-events: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #333;
+    opacity: 0; /* Initial state for opacity */
+    transition: opacity 0.3s ease; /* Transition for smooth opening */
+}
+
+.hover-popup.show {
+    display: block;
+    animation: fadeIn 0.3s forwards; /* Apply the fadeIn animation */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px); /* Slight upward movement */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* End at the original position */
+    }
+}
+
+
+.time-slot {
+    text-align: right;
+    padding-right: 10px;
+    font-weight: bold;
+    border: none; /* Remove border from time labels */
+    position: relative;
+}
+.hover-popup {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 1000;
+    pointer-events: none; /* Makes sure the popup doesn't capture mouse events */
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+@media screen and (max-width: 768px) {
+    .calendar {
+        grid-template-columns: auto repeat(5, 1fr);
+    }
+
+    .day-header,
+    .timeslot,
+    .time-slot {
+        padding: 5px;
+    }
+
+}
+
+
+
+
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+.calendar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 5px; /
+}
+
+.week-nav-button {
+    background-color: rgba(2, 94, 184, 0.95);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.week-nav-button:hover {
+    background-color:  rgba(255, 188, 40, 1); /* Change to yellow on hover */
+}
+
+.week-display {
+    font-size: 18px;
+    font-weight: bold; /* Make the font bold */
+    color: white; /* White text color */
+    padding: 10px 15px; /* Add padding for better spacing */
+    background-color: rgba(2, 94, 184, 0.95); /* Match the buttons' blue color */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Center the text */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+.current-time-indicator {
+    position: absolute;
+    left: 5%;
+    width: 95%;
+    height: 5px; /* Make the line bolder */
+    background-color: rgba(255, 188, 40, 1);
+    z-index: 10;
+    pointer-events: none;
+}
+
+.current-time-display {
+    position: absolute;
+    right: 0; /* Right align it */
+    transform: translateY(-100%); /* Move it up above the line */
+    background-color: rgba(2, 94, 184, 0.95); /* Solid opaque blue background */
+    padding: 2px 8px; /* Add some padding for better visibility */
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: bold; /* Make the font bold */
+    color: white; /* White text color for contrast */
+    z-index: 11; /* Ensure it appears on top */
+    border-radius: 4px; /* Rounded corners */
+    white-space: nowrap; /* Prevent the text from wrapping */
+}
+.timeslot {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid rgba(2, 94, 184, 0.95);
+    background-color: #fff; /* White background to cover any underlying grid lines */
+    transition: background-color 0.2s; /* Smooth transition for background color */
+}
+
+
+
+.filled-timeslot {
+    background-color: rgba(245, 124, 0, 1); /* Dark orange background without transparency */
+    border: 2px solid rgba(245, 124, 0, 1); /* Darker orange border */
+    border-radius: 5px;
+    padding: 8px; /* Adjusted padding */
+    color: #fff; /* White text color for readability */
+    font-weight: bold;
+    text-align: center;
+    box-sizing: border-box;
+    z-index: 10; /* Ensure it appears above other elements */
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth transition for transform and shadow */
+    margin: -1px; /* Adjust margin to cover the borders properly */
+}
+
+.filled-timeslot:hover {
+    transform: scale(1.05); /* Slightly scale up the timeslot */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow to give a "coming towards you" effect */
+    background-color: rgba(245, 124, 0, 1); /* Ensure the color stays the same */
+}
+#timepopup-form {
+    position: absolute;
+    z-index: 101; /* Ensure this is higher than the overlay */
+    /* Other styles for the form */
+}
+
+#timepopup-overlay {
+    position: fixed;
+    z-index: 100; /* Ensure this is lower than the form */
+    /* Other styles for the overlay */
+}
+#popup-form {
+    position: absolute;
+    z-index: 101; /* Ensure this is higher than the overlay */
+    /* Other styles for the form */
+}
+
+#popup-overlay {
+    position: fixed;
+    z-index: 100; /* Ensure this is lower than the form */
+    /* Other styles for the overlay */
+}
