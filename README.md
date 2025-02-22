@@ -3,7 +3,7 @@
 
 ## Installation
 
-To try the website yourself you can run these commands:
+To try the website locally you can run the following commands:
 
 docker pull officerpitucha/somtomorrow
 
